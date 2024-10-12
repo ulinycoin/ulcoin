@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Рекламные Материалы</title>
+    <title>Advertising Materials</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="robots" content="index, follow">
+    <meta name="description" content="Advertising materials and offers. Browse unique posters and order yours from Mapiful.">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -82,7 +83,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Mapiful (Product Feed)</h1>
+        <h1>Advertising Materials and Offers</h1>
         <div class="offer-grid">
             <!-- Карточки с офферами будут добавлены динамически через JavaScript -->
         </div>
@@ -101,15 +102,17 @@
                     data.forEach(offer => {
                         const card = document.createElement('div');
                         card.classList.add('offer-card');
+                        card.setAttribute('itemscope', '');
+                        card.setAttribute('itemtype', 'https://schema.org/Product');
                         card.innerHTML = `
                             <div class="offer-image">
-                                <a href="${offer.link}" target="_top">
-                                    <img src="${offer.image_url}" alt="${offer.title}">
+                                <a href="${offer.link}" target="_top" itemprop="url">
+                                    <img src="${offer.image_url}" alt="${offer.title}" itemprop="image">
                                 </a>
                             </div>
                             <div class="offer-content">
-                                <h2 class="offer-title">${offer.title}</h2>
-                                <p class="offer-description">${offer.description}</p>
+                                <h2 class="offer-title" itemprop="name">${offer.title}</h2>
+                                <p class="offer-description" itemprop="description">${offer.description}</p>
                                 <a href="${offer.link}" class="offer-button">Buy Now</a>
                             </div>
                         `;
