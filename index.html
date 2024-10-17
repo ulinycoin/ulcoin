@@ -1,130 +1,102 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advertising Materials</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Advertising materials and offers. Browse unique posters and order yours from Mapiful.">
+    <title>Redirecting to Affiliate Link</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
-            color: #212529;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #343a40;
-            margin-bottom: 40px;
-        }
-        .offer-grid {
             display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
             justify-content: center;
-        }
-        .offer-card {
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            max-width: 350px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .offer-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-        .offer-image {
-            width: 100%;
-            height: 250px;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4 70%), 
+                        url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+            position: relative;
             overflow: hidden;
         }
-        .offer-image img {
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            background: rgba(255, 255, 255, 0.6);
+            z-index: 1;
         }
-        .offer-content {
-            padding: 20px;
+        .container {
+            position: relative;
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.85);
+            max-width: 600px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s;
         }
-        .offer-title {
-            font-size: 1.4em;
-            color: #212529;
-            margin: 0 0 15px;
+        .container:hover {
+            transform: translateY(-5px);
         }
-        .offer-description {
-            font-size: 1em;
-            color: #6c757d;
+        h1 {
+            font-size: 1.8rem;
+            color: #333;
             margin-bottom: 20px;
         }
-        .offer-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: #fff;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s;
+        p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
         }
-        .offer-button:hover {
-            background-color: #218838;
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 8px 25px rgba(0,123,255,0.6);
+        }
+        .description {
+            text-align: left;
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
+    <div class="overlay"></div>
     <div class="container">
-        <h1>Advertising Materials and Offers</h1>
-        <div class="offer-grid">
-            <!-- Карточки с офферами будут добавлены динамически через JavaScript -->
+        <h1>Nail Sticker Product</h1>
+        <p>Click the button below to view the product:</p>
+        <a href="https://www.kqzyfj.com/click-101283629-14096339?url=https%3A%2F%2Fwww.ecosmetics.com%2Fproduct%2Fnail-sticker-50%2F%3Fattribute_pa_mavenir_color%3Dmavenir_brillante-pistachio-nail&cjsku=91042159" class="button">View Product</a>
+        
+        <div class="description">
+            <h2>About the Product</h2>
+            <p><strong>Mavenir's Nail Sticker collection</strong> offers salon-quality art with the ease of liquid gel application. These stickers provide a brilliant shine and flawlessly fit any nail shape or size.</p>
+            <p>Featuring a range of trendy designs and colors, the collection allows for effortless self-expression. Completely safe and animal-friendly, this product lets you elevate your nail game from the comfort of your home.</p>
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            fetch('offers.json')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    const offerGrid = document.querySelector('.offer-grid');
-                    data.forEach(offer => {
-                        const card = document.createElement('div');
-                        card.classList.add('offer-card');
-                        card.setAttribute('itemscope', '');
-                        card.setAttribute('itemtype', 'https://schema.org/Product');
-                        card.innerHTML = `
-                            <div class="offer-image">
-                                <a href="${offer.link}" target="_top" itemprop="url">
-                                    <img src="${offer.image_url}" alt="${offer.title}" itemprop="image">
-                                </a>
-                            </div>
-                            <div class="offer-content">
-                                <h2 class="offer-title" itemprop="name">${offer.title}</h2>
-                                <p class="offer-description" itemprop="description">${offer.description}</p>
-                                <a href="${offer.link}" class="offer-button">Buy Now</a>
-                            </div>
-                        `;
-                        offerGrid.appendChild(card);
-                    });
-                })
-                .catch(error => console.error('Error loading offers:', error));
-        });
-    </script>
 </body>
-    <footer>
-    <p><a href="https://ulinycoin.github.io/ulcoin/privacy-policy.html" target="_blank">Privacy Policy</a></p>
-</footer>
-
 </html>
